@@ -1,0 +1,24 @@
+name: PR Checks
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'docker/**'
+      - 'src/**'
+
+jobs:
+  pr-checks:
+    runs-on: ubuntu-latest
+    environment: pr-checks
+    permissions:
+      contents: read
+      pull-requests: write
+      packages: write
+    steps:
+    - name: Docker Tests
+      uses: qtsone/actions/docker/tests@main
+      with:
+        image-name: qtsone/argocd
+        dockerfile-path: docker/Dockerfile
+        github-token: ${{ secrets.GITHUB_TOKEN }}

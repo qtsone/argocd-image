@@ -1,0 +1,17 @@
+name: Push to Docker Hub
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build and Push Docker Image
+      uses: qtsone/actions/docker/build@main
+      with:
+        image-name: qtsone/argocd
+        dockerfile-path: docker/Dockerfile
+        github-token: ${{ secrets.GITHUB_TOKEN }}
