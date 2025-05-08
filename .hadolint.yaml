@@ -1,0 +1,6 @@
+no-fail: false
+no-color: true
+failure-threshold: error
+format: tty
+ignored:
+  - DL3008
