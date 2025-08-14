@@ -1,12 +1,12 @@
 # syntax=docker/dockerfile:1
 # https://docs.docker.com/engine/reference/builder/
 
-ARG ARGOCD_VERSION="v3.0.0"
+ARG ARGOCD_VERSION="v3.1.0"
 FROM quay.io/argoproj/argocd:${ARGOCD_VERSION}
 
-ARG YQ_VERSION="v4.45.2"
-ARG JQ_VERSION="1.7.1"
-ARG VAULT_VERSION="1.19.3"
+ARG YQ_VERSION="v4.47.1"
+ARG JQ_VERSION="1.8.1"
+ARG VAULT_VERSION="1.20.2"
 ARG VAULT_PLUGIN_VERSION="1.18.1"
 
 ENV YQ_BINARY="https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64"
