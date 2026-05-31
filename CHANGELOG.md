@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4](https://github.com/qtsone/argocd-image/compare/v1.0.3...v1.0.4) (2026-05-31)
+
+
+### Bug Fixes
+
+* **docker:** update YQ and Vault versions in Dockerfile ([9d3d637](https://github.com/qtsone/argocd-image/commit/9d3d637b634eac58530c939c393a35bb08d6ef30))
+* **workflow:** add permissions for contents and packages in tags.yaml ([fb45364](https://github.com/qtsone/argocd-image/commit/fb45364056567cfd03f4567ef9b8564ae9f64874))
+
 ## [1.0.3](https://github.com/qtsone/argocd-image/compare/v1.0.2...v1.0.3) (2026-05-31)
 
 
