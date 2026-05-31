@@ -22,11 +22,8 @@ USER root
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests 
 # (e.g. curl, awscli, gpg, sops)
 RUN apt-get update \
-    && apt-get install -y software-properties-common \
-    && add-apt-repository -y ppa:deadsnakes/ppa \
-    && apt-get update -y \
     && apt-get install -y \
-        curl unzip python3.10 python3-pip \
+        curl unzip python3 python3-pip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
