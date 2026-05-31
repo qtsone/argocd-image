@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 # https://docs.docker.com/engine/reference/builder/
 
-ARG ARGOCD_VERSION="v3.1.0"
+ARG ARGOCD_VERSION="v3.4.3"
 FROM quay.io/argoproj/argocd:${ARGOCD_VERSION}
 
 ARG YQ_VERSION="v4.47.1"
