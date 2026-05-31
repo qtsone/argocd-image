@@ -4,9 +4,9 @@
 ARG ARGOCD_VERSION="v3.4.3"
 FROM quay.io/argoproj/argocd:${ARGOCD_VERSION}
 
-ARG YQ_VERSION="v4.47.1"
+ARG YQ_VERSION="v4.53.2"
 ARG JQ_VERSION="1.8.1"
-ARG VAULT_VERSION="1.20.2"
+ARG VAULT_VERSION="2.0.1"
 ARG VAULT_PLUGIN_VERSION="1.18.1"
 
 ENV YQ_BINARY="https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64"
