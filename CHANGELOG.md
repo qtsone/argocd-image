@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5](https://github.com/qtsone/argocd-image/compare/v1.0.4...v1.0.5) (2026-07-26)
+
+
+### Bug Fixes
+
+* **docker:** install PyYAML from apt for the organisation plugin ([3f02e08](https://github.com/qtsone/argocd-image/commit/3f02e083adc86c05ed81b8e9c6a03b6ddd9a4079))
+
 ## [1.0.4](https://github.com/qtsone/argocd-image/compare/v1.0.3...v1.0.4) (2026-05-31)
 
 
