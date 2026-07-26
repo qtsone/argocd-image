@@ -21,9 +21,11 @@ USER root
 
 # Install tools needed for your repo-server to retrieve & decrypt secrets, render manifests 
 # (e.g. curl, awscli, gpg, sops)
+# python3-yaml is installed from apt rather than pip because the base image is
+# PEP 668 externally-managed; the organisation CMP plugin imports it.
 RUN apt-get update \
     && apt-get install -y \
-        curl unzip python3 python3-pip \
+        curl unzip python3 python3-pip python3-yaml \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
